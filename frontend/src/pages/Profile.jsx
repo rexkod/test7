@@ -153,18 +153,38 @@ const Profile = () => {
               </TabsContent>
 
               <TabsContent value="addresses" className="mt-6">
-                <Card>
-                  <CardContent className="p-12 text-center">
-                    <div className="mb-6">
-                      <MapPin className="w-24 h-24 mx-auto text-gray-300" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">No addresses found</h3>
-                    <p className="text-gray-600 mb-6">Add a delivery address</p>
-                    <Button className="bg-black hover:bg-gray-800 text-white">
-                      Add Address
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="space-y-4">
+                  <Button className="bg-black hover:bg-gray-800 text-white">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Add New Address
+                  </Button>
+                  
+                  {addresses.map((address) => (
+                    <Card key={address.id} className={address.isDefault ? 'border-2 border-black' : ''}>
+                      <CardContent className="p-6">
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <h3 className="font-bold">{address.name}</h3>
+                              <Badge variant="outline">{address.addressType}</Badge>
+                              {address.isDefault && (
+                                <Badge className="bg-black text-white">Default</Badge>
+                              )}
+                            </div>
+                            <p className="text-gray-700 mb-1">{address.address}</p>
+                            <p className="text-gray-700 mb-1">{address.locality}, {address.city}</p>
+                            <p className="text-gray-700 mb-2">{address.state} - {address.pincode}</p>
+                            <p className="text-gray-600 text-sm">Phone: {address.phone}</p>
+                          </div>
+                          <div className="flex flex-col space-y-2">
+                            <Button variant="outline" size="sm">Edit</Button>
+                            <Button variant="outline" size="sm">Remove</Button>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </TabsContent>
             </Tabs>
           </div>
