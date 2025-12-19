@@ -398,7 +398,10 @@ export const clearCart = () => {
 };
 
 export const getCartTotal = () => {
-  return cartItems.reduce((total, item) => total + (item.salePrice * item.quantity), 0);
+  return cartItems.reduce((total, item) => {
+    const price = item.quantity >= 10 ? item.salePrice * 0.85 : item.salePrice;
+    return total + (price * item.quantity);
+  }, 0);
 };
 
 export const getCartCount = () => {
