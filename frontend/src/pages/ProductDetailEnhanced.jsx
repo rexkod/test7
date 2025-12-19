@@ -284,6 +284,26 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
               </p>
             </div>
 
+            {/* B2B Pricing */}
+            {quantity >= 10 && (
+              <div className="mb-6 p-4 bg-bright-50 border-2 border-bright-500 rounded-lg">
+                <div className="flex items-center space-x-2 mb-2">
+                  <Badge className="bg-bright-500 hover:bg-bright-600">B2B Pricing</Badge>
+                  <span className="text-sm font-medium text-bright-700">MOQ: 10 units</span>
+                </div>
+                <div className="flex items-baseline space-x-3">
+                  <span className="text-3xl font-bold text-bright-600">₹{(product.salePrice * 0.85).toLocaleString()}</span>
+                  <span className="text-sm text-gray-600">per unit</span>
+                  <Badge variant="secondary" className="bg-bright-100 text-bright-700">
+                    15% additional off
+                  </Badge>
+                </div>
+                <p className="text-sm text-gray-600 mt-2">
+                  Total: ₹{((product.salePrice * 0.85) * quantity).toLocaleString()} for {quantity} units
+                </p>
+              </div>
+            )}
+
             {/* Quantity and Actions */}
             <div className="mb-6">
               <div className="flex items-center space-x-4 mb-4">
@@ -305,19 +325,24 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                     <Plus className="w-4 h-4" />
                   </Button>
                 </div>
+                {quantity < 10 && (
+                  <span className="text-sm text-gray-600">
+                    Order 10+ for B2B pricing
+                  </span>
+                )}
               </div>
               <div className="flex gap-4">
                 <Button
                   onClick={handleAddToCart}
                   variant="outline"
-                  className="flex-1 py-6 text-lg border-black hover:bg-gray-50"
+                  className="flex-1 py-6 text-lg border-bright-600 text-bright-600 hover:bg-bright-50"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Add to Cart
                 </Button>
                 <Button
                   onClick={handleBuyNow}
-                  className="flex-1 bg-black hover:bg-gray-800 text-white py-6 text-lg"
+                  className="flex-1 bg-bright-600 hover:bg-bright-700 text-white py-6 text-lg"
                 >
                   BUY NOW
                 </Button>
