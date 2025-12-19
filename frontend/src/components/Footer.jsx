@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-600">Copyright © 2025 Edify.club</p>
+            <p className="text-sm text-gray-600">Copyright © 2025 Bright.club</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition">
                 <Instagram className="w-5 h-5" />
