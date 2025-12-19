@@ -1,4 +1,4 @@
-// Mock data for Edify.club replica
+// Mock data for Edify replica
 
 export const products = [
   {

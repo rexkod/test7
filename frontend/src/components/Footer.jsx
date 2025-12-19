@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/contact" className="text-gray-600 hover:text-black transition">Contact us</Link></li>
-              <li><a href="mailto:contact@brightlaptop.club" className="text-gray-600 hover:text-black transition">contact@brightlaptop.club</a></li>
+              <li><a href="mailto:contact@brightlaptop" className="text-gray-600 hover:text-black transition">contact@brightlaptop</a></li>
               <li><a href="tel:+919964093100" className="text-gray-600 hover:text-black transition">For Sales - +919964093100</a></li>
               <li><a href="tel:+919513245671" className="text-gray-600 hover:text-black transition">For Service / Warranty - +919513245671</a></li>
             </ul>
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-600">Copyright © 2025 Bright Laptop.club</p>
+            <p className="text-sm text-gray-600">Copyright © 2025 Bright Laptop</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition">
                 <Instagram className="w-5 h-5" />
