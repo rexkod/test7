@@ -23,9 +23,32 @@ const Home = ({ onCartUpdate }) => {
 
   return (
     <div className="overflow-x-hidden">
-      {/* Hero Categories Section */}
-      <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Banner */}
+      <section className="py-12 bg-gradient-to-br from-blue-50 via-white to-orange-50">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-5xl font-bold mb-4">Find Your Perfect Laptop</h2>
+            <p className="text-xl text-gray-600 mb-8">Choose between brand new or certified refurbished laptops</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/refurbished-laptops">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
+                  <span className="mr-2">🔄</span> Refurbished Laptops - Save up to 70%
+                </Button>
+              </Link>
+              <Link to="/new-laptops">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg">
+                  <span className="mr-2">✨</span> New Laptops - Latest Models
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Categories Section */}
+      <section className="py-8 bg-white">
+        <div className="container mx-auto px-4">
+          <h3 className="text-2xl font-bold mb-6">Shop by Category</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.slice(0, 5).map((category, index) => (
               <Link
