@@ -15,7 +15,7 @@ const Startups = () => {
             Power Your Startup with <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Premium Tech</span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Join 50+ successful startups who trust Edify for their technology needs. 
+            Join 50+ successful startups who trust Bright for their technology needs. 
             Get quality refurbished laptops that help you scale without the hefty price tag.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -78,7 +78,7 @@ const Startups = () => {
         {/* Trusted By */}
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 mb-20">
           <h2 className="text-3xl font-bold mb-4 text-center">Trusted by 50+ Startup Founders</h2>
-          <p className="text-center text-gray-600 mb-12">Join innovative startups who are building the future with Edify</p>
+          <p className="text-center text-gray-600 mb-12">Join innovative startups who are building the future with Bright</p>
           <div className="flex flex-wrap justify-center items-center gap-12">
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="grayscale hover:grayscale-0 transition">
@@ -157,7 +157,7 @@ const Startups = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  "As a bootstrapped startup, every rupee counts. Edify helped us save over ₹3 lakhs on our initial tech setup. 
+                  "As a bootstrapped startup, every rupee counts. Bright helped us save over ₹3 lakhs on our initial tech setup. 
                   The quality is outstanding and we've had zero issues!"
                 </p>
                 <p className="font-semibold">- Priya S., Founder, EdTech Startup</p>
@@ -171,7 +171,7 @@ const Startups = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  "We scaled from 5 to 30 people in 6 months. Edify's bulk pricing and quick delivery made it seamless. 
+                  "We scaled from 5 to 30 people in 6 months. Bright's bulk pricing and quick delivery made it seamless. 
                   Our dedicated account manager was always responsive and helpful."
                 </p>
                 <p className="font-semibold">- Rahul M., CTO, SaaS Startup</p>

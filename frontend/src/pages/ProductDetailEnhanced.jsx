@@ -63,15 +63,15 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
   const faqs = [
     {
       question: "What are refurbished laptops?",
-      answer: "Refurbished laptops are pre-owned devices that have been professionally restored to like-new condition. At Edify, each laptop undergoes rigorous testing, certified repairs, and deep cleaning to meet high-quality standards."
+      answer: "Refurbished laptops are pre-owned devices that have been professionally restored to like-new condition. At Bright, each laptop undergoes rigorous testing, certified repairs, and deep cleaning to meet high-quality standards."
     },
     {
       question: "Are refurbished laptops reliable?",
-      answer: "Yes. Every Edify laptop goes through strict quality checks, hardware diagnostics, and functionality tests before being approved for sale."
+      answer: "Yes. Every Bright laptop goes through strict quality checks, hardware diagnostics, and functionality tests before being approved for sale."
     },
     {
       question: "What is included with a refurbished laptop purchase?",
-      answer: "Each Edify laptop includes a charger, detailed condition report, and a minimum 12-months warranty. Some models may also come with a free carry case."
+      answer: "Each Bright laptop includes a charger, detailed condition report, and a minimum 12-months warranty. Some models may also come with a free carry case."
     }
   ];
 
