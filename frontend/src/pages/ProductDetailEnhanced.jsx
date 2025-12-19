@@ -288,7 +288,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
             {quantity >= 10 && (
               <div className="mb-6 p-4 bg-bright-50 border-2 border-bright-500 rounded-lg">
                 <div className="flex items-center space-x-2 mb-2">
-                  <Badge className="bg-bright-500 hover:bg-bright-600">B2B Pricing</Badge>
+                  <Badge className="bg-bright-500 hover:bg-black">B2B Pricing</Badge>
                   <span className="text-sm font-medium text-bright-700">MOQ: 10 units</span>
                 </div>
                 <div className="flex items-baseline space-x-3">
