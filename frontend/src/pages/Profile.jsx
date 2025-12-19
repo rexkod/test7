@@ -100,11 +100,53 @@ const Profile = () => {
                 ) : (
                   <div className="space-y-4">
                     {orders.map((order) => (
-                      <Card key={order.id}>
-                        <CardContent className="p-6">
-                          {/* Order details would go here */}
-                        </CardContent>
-                      </Card>
+                      <Link key={order.id} to={`/order/${order.id}`}>
+                        <Card className="hover:shadow-lg transition cursor-pointer">
+                          <CardContent className="p-6">
+                            <div className="flex items-start justify-between mb-4">
+                              <div>
+                                <div className="flex items-center space-x-3 mb-2">
+                                  <h3 className="font-bold text-lg">{order.id}</h3>
+                                  <Badge className={`${
+                                    order.status === 'Delivered' ? 'bg-green-500' :
+                                    order.status === 'In Transit' ? 'bg-blue-500' :
+                                    'bg-orange-500'
+                                  } text-white`}>
+                                    {order.status}
+                                  </Badge>
+                                </div>
+                                <p className="text-sm text-gray-600">Ordered on {new Date(order.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+                              </div>
+                              <ChevronRight className="w-5 h-5 text-gray-400" />
+                            </div>
+                            
+                            <div className="flex items-center space-x-4 mb-4">
+                              <img
+                                src={order.items[0].image}
+                                alt={order.items[0].name}
+                                className="w-20 h-20 object-cover rounded"
+                              />
+                              <div className="flex-1">
+                                <h4 className="font-semibold line-clamp-1">{order.items[0].name}</h4>
+                                <p className="text-sm text-gray-600">Quantity: {order.items[0].quantity}</p>
+                                {order.items[0].pricingType === 'B2B' && (
+                                  <Badge className="bg-orange-100 text-orange-700 text-xs mt-1">B2B Order</Badge>
+                                )}
+                              </div>
+                            </div>
+
+                            <Separator className="my-4" />
+
+                            <div className="flex items-center justify-between">
+                              <div>
+                                <p className="text-sm text-gray-600">Total Amount</p>
+                                <p className="text-xl font-bold">₹{order.total.toLocaleString()}</p>
+                              </div>
+                              <Button variant="outline">View Details</Button>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </Link>
                     ))}
                   </div>
                 )}
