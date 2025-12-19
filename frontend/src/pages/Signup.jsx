@@ -11,7 +11,11 @@ const Signup = () => {
     email: '',
     phone: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    isBusiness: false,
+    businessName: '',
+    gstNumber: '',
+    businessAddress: ''
   });
   const navigate = useNavigate();
 
