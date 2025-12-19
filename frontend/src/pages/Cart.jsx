@@ -96,11 +96,30 @@ const Cart = ({ onCartUpdate }) => {
                           </h3>
                         </Link>
                         <p className="text-sm text-gray-600 mb-2">{item.brand}</p>
-                        <div className="flex items-baseline space-x-2">
-                          <span className="text-lg font-bold">₹{item.salePrice.toLocaleString()}</span>
-                          <span className="text-sm text-gray-500 line-through">₹{item.originalPrice.toLocaleString()}</span>
-                          <span className="text-sm text-green-600 font-medium">{item.discount}% off</span>
-                        </div>
+                        {item.quantity >= 10 ? (
+                          <div>
+                            <div className="flex items-center space-x-2 mb-1">
+                              <Badge className="bg-orange-500 text-white text-xs">B2B Pricing</Badge>
+                              <span className="text-xs text-gray-600">15% off (MOQ: 10)</span>
+                            </div>
+                            <div className="flex items-baseline space-x-2">
+                              <span className="text-lg font-bold text-orange-600">₹{(item.salePrice * 0.85).toLocaleString()}</span>
+                              <span className="text-sm text-gray-500 line-through">₹{item.salePrice.toLocaleString()}</span>
+                              <span className="text-sm text-orange-600 font-medium">per unit</span>
+                            </div>
+                          </div>
+                        ) : (
+                          <div>
+                            <div className="flex items-center space-x-2 mb-1">
+                              <Badge className="bg-blue-500 text-white text-xs">B2C Pricing</Badge>
+                            </div>
+                            <div className="flex items-baseline space-x-2">
+                              <span className="text-lg font-bold">₹{item.salePrice.toLocaleString()}</span>
+                              <span className="text-sm text-gray-500 line-through">₹{item.originalPrice.toLocaleString()}</span>
+                              <span className="text-sm text-green-600 font-medium">{item.discount}% off</span>
+                            </div>
+                          </div>
+                        )}
                       </div>
 
                       {/* Quantity Controls */}
