@@ -29,7 +29,7 @@ const Header = ({ cartCount = 0 }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/bright-logo.webp" alt="Bright" className="h-8 w-auto" />
+            <img src="/bright-logo.webp" alt="Bright Laptop" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

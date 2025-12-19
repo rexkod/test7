@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6">About Bright</h1>
+          <h1 className="text-5xl font-bold mb-6">About Bright Laptop</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             We're on a mission to make premium technology accessible to everyone while reducing electronic waste. 
             Every device we refurbish is a step towards a more sustainable future.
@@ -39,7 +39,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6">Our Story</h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Founded with a vision to bridge the gap between affordability and quality, Bright has become India's 
+              Founded with a vision to bridge the gap between affordability and quality, Bright Laptop has become India's 
               trusted destination for certified refurbished laptops and computers. We believe that everyone deserves 
               access to premium technology without breaking the bank.
             </p>

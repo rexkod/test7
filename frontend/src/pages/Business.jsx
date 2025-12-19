@@ -153,7 +153,7 @@ const Business = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  "Bright helped us equip our entire team of 25 with quality laptops at a fraction of the cost. 
+                  "Bright Laptop helped us equip our entire team of 25 with quality laptops at a fraction of the cost. 
                   The bulk discount and dedicated support made the process seamless."
                 </p>
                 <p className="font-semibold">- Founder, Tech Startup</p>
