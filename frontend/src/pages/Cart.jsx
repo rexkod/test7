@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Trash2, ShoppingBag, ArrowLeft } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { Separator } from '../components/ui/separator';
 import { getCart, updateCartQuantity, removeFromCart, getCartTotal, clearCart } from '../mockData';
 import { toast } from '../hooks/use-toast';
