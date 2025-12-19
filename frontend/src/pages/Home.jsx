@@ -79,15 +79,15 @@ const Home = ({ onCartUpdate }) => {
                 Trusted by top startups &<br />working professionals
               </p>
               <div className="flex flex-wrap gap-4">
-                <Badge className="bg-black text-white hover:bg-gray-800 py-3 px-6 text-sm">
+                <Badge className="bg-bright-600 text-white hover:bg-bright-700 py-3 px-6 text-sm">
                   <Shield className="w-4 h-4 mr-2" />
                   12 Months Warranty
                 </Badge>
-                <Badge className="bg-black text-white hover:bg-gray-800 py-3 px-6 text-sm">
+                <Badge className="bg-bright-600 text-white hover:bg-bright-700 py-3 px-6 text-sm">
                   <span className="mr-2">14</span>
                   14 Days Free Return
                 </Badge>
-                <Badge className="bg-black text-white hover:bg-gray-800 py-3 px-6 text-sm">
+                <Badge className="bg-bright-600 text-white hover:bg-bright-700 py-3 px-6 text-sm">
                   <span className="mr-2">%</span>
                   COD & EMI Available
                 </Badge>
