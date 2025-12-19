@@ -93,7 +93,7 @@ const Checkout = ({ onCartUpdate }) => {
           <span>/</span>
           <span>Cart</span>
           <span>/</span>
-          <span className="text-black font-medium">Address</span>
+          <span className="text-bright-600 font-medium">Address</span>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
