@@ -140,7 +140,7 @@ const Home = ({ onCartUpdate }) => {
                 key={category.id}
                 to={`/all-products?category=${category.slug}`}
               >
-                <Button variant="outline" className="hover:bg-black hover:text-white transition">
+                <Button variant="outline" className="hover:bg-bright-600 hover:text-white transition">
                   {category.name}
                 </Button>
               </Link>
