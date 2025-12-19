@@ -39,7 +39,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6">Our Story</h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Founded with a vision to bridge the gap between affordability and quality, Edify has become India's 
+              Founded with a vision to bridge the gap between affordability and quality, Bright has become India's 
               trusted destination for certified refurbished laptops and computers. We believe that everyone deserves 
               access to premium technology without breaking the bank.
             </p>
