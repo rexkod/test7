@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Edify</h3>
+            <h3 className="font-bold text-lg mb-4">Bright</h3>
             <p className="text-sm text-gray-600 mb-4">
               2nd Floor, SRS Arcade, 15/2, Hosa Rd, Kasavanahalli,<br />
               Bengaluru, Karnataka - 560035, India
             </p>
             <p className="text-sm text-gray-600 mb-4">GSTIN: 29AAJCK8673K1ZN</p>
-            <p className="text-sm text-gray-600">Kuzagan Services Private Limited</p>
+            <p className="text-sm text-gray-600">Bright Technologies Private Limited</p>
             <div className="flex space-x-4 mt-6">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition">
                 <Instagram className="w-5 h-5" />
