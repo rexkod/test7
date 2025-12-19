@@ -120,7 +120,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                   key={idx}
                   onClick={() => setCurrentImageIndex(idx)}
                   className={`aspect-square rounded-lg overflow-hidden cursor-pointer border-2 ${
-                    currentImageIndex === idx ? 'border-bright-600' : 'border-gray-200'
+                    currentImageIndex === idx ? 'border-black' : 'border-gray-200'
                   }`}
                 >
                   <img src={img} alt={`Product ${idx + 1}`} className="w-full h-full object-cover" />
@@ -254,7 +254,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                       key={warranty.id}
                       onClick={() => setSelectedWarranty(warranty.id)}
                       className={`p-3 border rounded-lg cursor-pointer transition ${
-                        selectedWarranty === warranty.id ? 'border-bright-600 bg-gray-50' : 'border-gray-200'
+                        selectedWarranty === warranty.id ? 'border-black bg-gray-50' : 'border-gray-200'
                       }`}
                     >
                       <div className="flex items-center justify-between">
@@ -335,7 +335,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                 <Button
                   onClick={handleAddToCart}
                   variant="outline"
-                  className="flex-1 py-6 text-lg border-bright-600 text-black hover:bg-bright-50"
+                  className="flex-1 py-6 text-lg border-black text-black hover:bg-bright-50"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Add to Cart

@@ -347,7 +347,7 @@ const Checkout = ({ onCartUpdate }) => {
                       {addresses.map((address) => (
                         <Card
                           key={address.id}
-                          className={`cursor-pointer transition ${selectedAddress?.id === address.id ? 'border-bright-600 border-2' : 'border-gray-200'}`}
+                          className={`cursor-pointer transition ${selectedAddress?.id === address.id ? 'border-black border-2' : 'border-gray-200'}`}
                           onClick={() => setSelectedAddress(address)}
                         >
                           <CardContent className="p-4">
