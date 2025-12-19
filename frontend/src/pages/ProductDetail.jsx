@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ShoppingCart, Star, Shield, Package, Truck, ChevronLeft } from 'lucide-react';
+import { ShoppingCart, Star, Shield, Package, Truck, ChevronLeft, Eye, Share2, Plus, Minus } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { Separator } from '../components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { products, addToCart } from '../mockData';
 import { toast } from '../hooks/use-toast';
 import ProductCard from '../components/ProductCard';
