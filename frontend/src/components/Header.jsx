@@ -137,13 +137,16 @@ const Header = ({ cartCount = 0 }) => {
                   </button>
                 </div>
               </form>
-              <Link to="/all-products" className="text-sm py-2" onClick={() => setIsMenuOpen(false)}>
-                All Products
+              <Link to="/refurbished-laptops" className="text-sm py-2 font-medium" onClick={() => setIsMenuOpen(false)}>
+                Refurbished Laptops
+              </Link>
+              <Link to="/new-laptops" className="text-sm py-2 font-medium" onClick={() => setIsMenuOpen(false)}>
+                New Laptops
               </Link>
               {categories.map((category) => (
                 <Link
                   key={category.id}
-                  to={`/all-products?category=${category.slug}`}
+                  to={`/refurbished-laptops?category=${category.slug}`}
                   className="text-sm py-2 pl-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
