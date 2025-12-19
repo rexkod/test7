@@ -213,7 +213,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                       key={ram}
                       variant={selectedRam === ram ? 'default' : 'outline'}
                       onClick={() => setSelectedRam(ram)}
-                      className={selectedRam === ram ? 'bg-black text-white' : ''}
+                      className={selectedRam === ram ? 'bg-black hover:bg-gray-800 text-white' : ''}
                     >
                       {ram}
                     </Button>
