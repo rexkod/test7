@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6">About Edify</h1>
+          <h1 className="text-5xl font-bold mb-6">About Bright</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             We're on a mission to make premium technology accessible to everyone while reducing electronic waste. 
             Every device we refurbish is a step towards a more sustainable future.
