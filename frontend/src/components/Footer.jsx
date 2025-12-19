@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/contact" className="text-gray-600 hover:text-black transition">Contact us</Link></li>
-              <li><a href="mailto:contact@bright.club" className="text-gray-600 hover:text-bright-600 transition">contact@bright.club</a></li>
+              <li><a href="mailto:contact@bright.club" className="text-gray-600 hover:text-black transition">contact@bright.club</a></li>
               <li><a href="tel:+919964093100" className="text-gray-600 hover:text-black transition">For Sales - +919964093100</a></li>
               <li><a href="tel:+919513245671" className="text-gray-600 hover:text-black transition">For Service / Warranty - +919513245671</a></li>
             </ul>

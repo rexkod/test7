@@ -292,7 +292,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                   <span className="text-sm font-medium text-bright-700">MOQ: 10 units</span>
                 </div>
                 <div className="flex items-baseline space-x-3">
-                  <span className="text-3xl font-bold text-bright-600">₹{(product.salePrice * 0.85).toLocaleString()}</span>
+                  <span className="text-3xl font-bold text-black">₹{(product.salePrice * 0.85).toLocaleString()}</span>
                   <span className="text-sm text-gray-600">per unit</span>
                   <Badge variant="secondary" className="bg-bright-100 text-bright-700">
                     15% additional off
@@ -335,7 +335,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                 <Button
                   onClick={handleAddToCart}
                   variant="outline"
-                  className="flex-1 py-6 text-lg border-bright-600 text-bright-600 hover:bg-bright-50"
+                  className="flex-1 py-6 text-lg border-bright-600 text-black hover:bg-bright-50"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Add to Cart
