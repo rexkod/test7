@@ -52,7 +52,7 @@ const Home = ({ onCartUpdate }) => {
       </section>
 
       {/* Scrolling Banner */}
-      <div className="bg-bright-600 text-white py-3 overflow-hidden">
+      <div className="bg-black text-white py-3 overflow-hidden">
         <div className="animate-scroll-left flex space-x-12 whitespace-nowrap">
           {[...Array(10)].map((_, i) => (
             <div key={i} className="flex items-center space-x-12">
