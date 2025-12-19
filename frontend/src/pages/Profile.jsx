@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { User, Package, LogOut, MapPin } from 'lucide-react';
+import { User, Package, LogOut, MapPin, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { Card, CardContent } from '../components/ui/card';
 import { Separator } from '../components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { sampleOrders, sampleAddresses } from '../mockData';
 
 const Profile = () => {
   const [user] = useState({
@@ -15,7 +17,8 @@ const Profile = () => {
     city: '-'
   });
 
-  const orders = [];
+  const orders = sampleOrders;
+  const addresses = sampleAddresses;
 
   return (
     <div className="py-12 bg-gray-50 min-h-screen">
