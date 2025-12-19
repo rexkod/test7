@@ -35,8 +35,16 @@ const Cart = ({ onCartUpdate }) => {
     navigate('/checkout');
   };
 
-  const total = getCartTotal();
-  const savings = cartItems.reduce((sum, item) => sum + ((item.originalPrice - item.salePrice) * item.quantity), 0);
+  // Calculate total with B2B pricing
+  const total = cartItems.reduce((sum, item) => {
+    const price = item.quantity >= 10 ? item.salePrice * 0.85 : item.salePrice;
+    return sum + (price * item.quantity);
+  }, 0);
+  
+  const savings = cartItems.reduce((sum, item) => {
+    const price = item.quantity >= 10 ? item.salePrice * 0.85 : item.salePrice;
+    return sum + ((item.originalPrice - price) * item.quantity);
+  }, 0);
 
   if (cartItems.length === 0) {
     return (
