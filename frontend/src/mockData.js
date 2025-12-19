@@ -407,3 +407,108 @@ export const getCartTotal = () => {
 export const getCartCount = () => {
   return cartItems.reduce((count, item) => count + item.quantity, 0);
 };
+
+// Sample Orders
+export const sampleOrders = [
+  {
+    id: 'ORD-2025-001234',
+    date: '2025-01-15',
+    status: 'In Transit',
+    statusColor: 'blue',
+    items: [
+      {
+        ...products[2], // Lenovo ThinkPad T440
+        quantity: 1,
+        price: 12500,
+        pricingType: 'B2C'
+      }
+    ],
+    subtotal: 12500,
+    discount: 0,
+    shipping: 0,
+    total: 12500,
+    shippingAddress: {
+      name: 'Rex',
+      phone: '9066669966',
+      address: '123, MG Road, Koramangala',
+      city: 'Bengaluru',
+      state: 'Karnataka',
+      pincode: '560034'
+    },
+    trackingNumber: 'BL2025011500123',
+    estimatedDelivery: '2025-01-20',
+    timeline: [
+      { status: 'Order Placed', date: '2025-01-15, 10:30 AM', completed: true },
+      { status: 'Order Confirmed', date: '2025-01-15, 11:00 AM', completed: true },
+      { status: 'Shipped', date: '2025-01-16, 09:00 AM', completed: true },
+      { status: 'In Transit', date: '2025-01-17, 02:00 PM', completed: true },
+      { status: 'Out for Delivery', date: 'Expected: Jan 20', completed: false },
+      { status: 'Delivered', date: 'Expected: Jan 20', completed: false }
+    ]
+  },
+  {
+    id: 'ORD-2024-009876',
+    date: '2024-12-10',
+    status: 'Delivered',
+    statusColor: 'green',
+    items: [
+      {
+        ...products[0], // Dell OptiPlex 3020
+        quantity: 12,
+        price: 8500 * 0.85, // B2B pricing
+        pricingType: 'B2B'
+      }
+    ],
+    subtotal: 102000,
+    discount: 15300,
+    shipping: 0,
+    total: 86700,
+    shippingAddress: {
+      name: 'Rex',
+      phone: '9066669966',
+      address: '123, MG Road, Koramangala',
+      city: 'Bengaluru',
+      state: 'Karnataka',
+      pincode: '560034'
+    },
+    trackingNumber: 'BL2024121000987',
+    estimatedDelivery: '2024-12-15',
+    deliveredDate: '2024-12-14',
+    timeline: [
+      { status: 'Order Placed', date: '2024-12-10, 02:30 PM', completed: true },
+      { status: 'Order Confirmed', date: '2024-12-10, 03:00 PM', completed: true },
+      { status: 'Shipped', date: '2024-12-11, 10:00 AM', completed: true },
+      { status: 'In Transit', date: '2024-12-12, 01:00 PM', completed: true },
+      { status: 'Out for Delivery', date: '2024-12-14, 08:00 AM', completed: true },
+      { status: 'Delivered', date: '2024-12-14, 11:30 AM', completed: true }
+    ]
+  }
+];
+
+// Sample Addresses
+export const sampleAddresses = [
+  {
+    id: 1,
+    name: 'Rex',
+    phone: '9066669966',
+    address: '123, MG Road, Koramangala',
+    locality: 'Koramangala',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    pincode: '560034',
+    addressType: 'Home',
+    isDefault: true
+  },
+  {
+    id: 2,
+    name: 'Rex',
+    phone: '9066669966',
+    address: '456, Whitefield Main Road',
+    locality: 'Whitefield',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    pincode: '560066',
+    addressType: 'Work',
+    isDefault: false
+  }
+];
