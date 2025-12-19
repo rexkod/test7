@@ -230,7 +230,7 @@ const ProductDetailEnhanced = ({ onCartUpdate }) => {
                       key={storage}
                       variant={selectedStorage === storage ? 'default' : 'outline'}
                       onClick={() => setSelectedStorage(storage)}
-                      className={selectedStorage === storage ? 'bg-black text-white' : ''}
+                      className={selectedStorage === storage ? 'bg-black hover:bg-gray-800 text-white' : ''}
                     >
                       {storage}
                     </Button>
