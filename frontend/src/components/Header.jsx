@@ -34,25 +34,27 @@ const Header = ({ cartCount = 0 }) => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
+            <Link to="/refurbished-laptops" className="text-sm hover:text-gray-600 transition font-medium">
+              Refurbished
+            </Link>
+            <Link to="/new-laptops" className="text-sm hover:text-gray-600 transition font-medium">
+              New
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 text-sm hover:text-gray-600 transition">
-                <Menu className="w-4 h-4" />
                 <span>Category</span>
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 {categories.map((category) => (
                   <DropdownMenuItem key={category.id} asChild>
-                    <Link to={`/all-products?category=${category.slug}`}>
+                    <Link to={`/refurbished-laptops?category=${category.slug}`}>
                       {category.name}
                     </Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link to="/all-products" className="text-sm hover:text-gray-600 transition">
-              All Products
-            </Link>
             <Link to="/business" className="text-sm hover:text-gray-600 transition">
               Business
             </Link>
