@@ -29,10 +29,7 @@ const Header = ({ cartCount = 0 }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">E</span>
-            </div>
-            <span className="text-xl font-bold hidden sm:block">edify</span>
+            <img src="/bright-logo.webp" alt="Bright" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
